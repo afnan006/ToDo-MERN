@@ -1,0 +1,83 @@
+/* App.css */
+
+.home {
+    max-width: 600px; /* Increased width for better layout */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.create_form input {
+    width: 100%; /* Full width input */
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc; /* Adjust as needed */
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.create_form button {
+    padding: 10px 20px; /* Increased padding for better click area */
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.todo-list {
+    margin-top: 20px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px; /* Increased padding for better spacing */
+    margin-bottom: 10px; /* Increased margin for better separation */
+    border-radius: 4px;
+}
+
+.task .checkbox {
+    margin-right: 10px;
+}
+
+.task .icon {
+    font-size: 24px;
+    color: #4CAF50; /* Green color for completed tasks */
+}
+
+.task .task-text {
+    flex-grow: 1;
+    margin-left: 10px; /* Added margin for better spacing between icon and text */
+}
+
+.no-todos {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.no-todos h2 {
+    color: #555;
+}
+
+.line_through {
+    position: relative;
+    display: inline-block; /* Ensures the element behaves like a block but respects its inline context */
+}
+
+.line_through::after {
+    content: ''; /* Required for the pseudo-element */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* Adjust this value to control the spacing between the lines */
+    border-top: 1px solid; /* Adjust the border style and color as needed */
+    border-bottom: 1px solid; /* Adjust the border style and color as needed */
+    box-sizing: border-box; /* Ensures the border width is included in the height calculation */
+}
